@@ -64,7 +64,7 @@ RUN \
         /var/{cache,log}/* \
         /var/lib/apt/lists/* \
         /root/.cache \
-    && find /tmp/ -mindepth 1  -delete \
+    && find /tmp/ -mindepth 1  -delete
 
 VOLUME Music:/share/mopidy/media/music
 
