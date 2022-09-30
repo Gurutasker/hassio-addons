@@ -20,7 +20,7 @@ panel_icon: mdi:music-circle
 ports:
   5555/udp: 5555
   6600/tcp: 6600
-  80/tcp: 80
+  80/tcp: 6680
 ports_description:
   5555/udp: Autoaudiosink
   6600/tcp: Mopidy
