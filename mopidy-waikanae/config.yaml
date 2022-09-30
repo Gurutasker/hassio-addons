@@ -37,4 +37,4 @@ schema:
   - str
 slug: mopidy
 url: https://github.com/Gurutasker/addon-mopidy-waikanae
-version: waikanae_new
+version: latest
