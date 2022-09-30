@@ -66,8 +66,6 @@ RUN \
         /root/.cache \
     && find /tmp/ -mindepth 1  -delete
 
-VOLUME Music:/share/mopidy/media/music
-
 # Move access.log to stdout and error.log to stderr
 RUN mkdir -p /var/log/nginx && ln -sf /dev/stdout /var/log/nginx/access.log && ln -sf /dev/stderr /var/log/nginx/error.log
 
