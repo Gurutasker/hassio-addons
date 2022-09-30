@@ -1,6 +1,6 @@
 ---
 name: Mopidy
-version: dev1
+version: dev2
 slug: mopidy
 panel_icon: mdi:music-circle
 description: Mopidy is an extensible music server
