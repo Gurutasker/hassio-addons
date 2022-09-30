@@ -1,42 +1,40 @@
----
-name: Mopidy
-version: dev5
-slug: mopidy
-panel_icon: mdi:music-circle
+arch:
+- amd64
+audio: true
+auth_api: true
 description: Mopidy is an extensible music server
-url: https://github.com/Gurutasker/hassio-addons/mopidy-waikanae
+image: ghcr.io/hassio-addons/mopidy/{arch}
 ingress: true
 ingress_entry: iris/
 ingress_stream: true
-init: false
-arch:
-  - amd64
-auth_api: true
-audio: true
-ports:
-  6600/tcp: 6600
-  5555/udp: 5555
-  80/tcp: 6680
-ports_description:
-  6600/tcp: Mopidy
-  5555/udp: Autoaudiosink
-  80/tcp: Web interface (Not required for Ingress)
 map:
-  - config
-  - share:rw
-  - ssl
-  - media
+- config
+- share:rw
+- ssl
+name: Mopidy
 options:
-  system_packages: []
   python_packages: []
   settings: []
+  system_packages: []
+panel_icon: mdi:music-circle
+ports:
+  5555/udp: 5555
+  6600/tcp: 6600
+  80/tcp: 80
+ports_description:
+  5555/udp: Autoaudiosink
+  6600/tcp: Mopidy
+  80/tcp: Web interface (Not required for Ingress)
 schema:
-  log_level: list(trace|debug|info|notice|warning|error|fatal)?
-  system_packages:
-    - str
-  python_packages:
-    - str
-  settings:
-    - name: str
-      value: str
   leave_front_door_open: bool?
+  log_level: list(trace|debug|info|notice|warning|error|fatal)?
+  python_packages:
+  - str
+  settings:
+  - name: str
+    value: str
+  system_packages:
+  - str
+slug: mopidy
+url: https://github.com/Gurutasker/addon-mopidy-waikanae
+version: dev6
