@@ -3,7 +3,7 @@ arch:
 audio: true
 auth_api: true
 description: Mopidy is an extensible music server
-image: ghcr.io/hassio-addons/mopidy/{arch}
+image: docker.io/atasker99/waikanae
 ingress: true
 ingress_entry: iris/
 ingress_stream: true
@@ -37,4 +37,3 @@ schema:
   - str
 slug: mopidy
 url: https://github.com/Gurutasker/addon-mopidy-waikanae
-version: b39bd04
