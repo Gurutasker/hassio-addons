@@ -65,7 +65,6 @@ RUN \
         /var/lib/apt/lists/* \
         /root/.cache \
     && find /tmp/ -mindepth 1  -delete \
-    && echo "1" >> /IS_CONTAINER
 
 VOLUME Music:/share/mopidy/media/music
 
