@@ -41,7 +41,7 @@ RUN \
         mopidy-mpd=3.3.0-1 \
         mopidy-podcast=3.0.1-1 \
         mopidy-soundcloud=3.0.1-1 \
-        mopidy-tunein=1.1.0-1 \
+        mopidy-tunein=1.1.0-1
 
 # Move access.log to stdout and error.log to stderr
 RUN mkdir -p /var/log/nginx && ln -sf /dev/stdout /var/log/nginx/access.log && ln -sf /dev/stderr /var/log/nginx/error.log
