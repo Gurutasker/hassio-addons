@@ -36,5 +36,5 @@ schema:
   system_packages:
   - str
 slug: mopidy
-url: https://github.com/Gurutasker/addon-mopidy-waikanae
+url: https://github.com/Gurutasker/addon-mopidy-waikanae-prod
 version: latest
