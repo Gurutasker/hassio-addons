@@ -11,7 +11,7 @@ map:
 - config
 - share:rw
 - ssl
-name: Mopidy
+name: Mopidy Lounge
 options:
   python_packages: []
   settings: []
@@ -20,11 +20,11 @@ panel_icon: mdi:music-circle
 ports:
   5555/udp: 5555
   6600/tcp: 6600
-  80/tcp: 6680
+  6680/tcp: 6680
 ports_description:
   5555/udp: Autoaudiosink
   6600/tcp: Mopidy
-  80/tcp: Web interface (Not required for Ingress)
+  6680/tcp: Web interface (Not required for Ingress)
 schema:
   leave_front_door_open: bool?
   log_level: list(trace|debug|info|notice|warning|error|fatal)?
