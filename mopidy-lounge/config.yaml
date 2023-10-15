@@ -35,6 +35,6 @@ schema:
     value: str
   system_packages:
   - str
-slug: mopidy
+slug: mopidy_lounge
 url: https://github.com/Gurutasker/addon-mopidy-lounge-prod
 version: latest
